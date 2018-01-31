@@ -18,6 +18,12 @@ String password
 
 String course
 
+String toString() {
+
+return "$name,$studentID,$course"
+
+}
+
     static constraints = {
 	name blank:false, nullable:false;
 	studentID blank:false, nullable:false;

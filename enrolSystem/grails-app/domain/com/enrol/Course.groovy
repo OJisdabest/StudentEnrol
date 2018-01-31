@@ -22,6 +22,14 @@ int numberOfStudents
 
 double tuitionFees
 
+double fees
+
+double calculateFees(){
+
+4*fees
+
+}
+
     static constraints = {
 	title blank:false, nullable:false;
 	department blank:false, nullable:false;
@@ -33,6 +41,7 @@ double tuitionFees
 	studyMode blank:false, nullable:false, size:1..20;
 	description blank:false, nullable:false, maxSize:5000, widget:'textarea';
 	tuitionFees blank:false, nullable:false, scale:2;
+	fees blank:false, nullable:false;
 
     }
 }

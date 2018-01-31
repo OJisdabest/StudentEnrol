@@ -89,6 +89,21 @@ lecturerEmail: 'lynne@shu.ac.uk',
 office:'Cantor 2105',
 bio:'Lynne Dawson is the course leader for BSC Computing').save()
 
+def lead1 = new Leader
+(
+fullName:'Oliver Hindley',
+post:'Course Leader',
+email: 'oliverh@shu.ac.uk',
+office:'Owen 2105').save()
+
+def lead2 = new Leader
+(
+fullName:'Peter Collindridge',
+post:'Course Deputy Leader',
+email: 'peterc@shu.ac.uk',
+office:'Adsetts 3105').save()
+
+
     }
     def destroy = {
     }
