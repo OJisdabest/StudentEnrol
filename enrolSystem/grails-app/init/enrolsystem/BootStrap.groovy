@@ -10,7 +10,7 @@ lecturer:'Tonderai',
 course:'Computing',
 description:'sysarch module 2').save()
 
-def comp = new Course
+def course1 = new Course
 (
 department:'Computing',
 title:'BSC Hon Computing',
@@ -23,7 +23,7 @@ numberOfStudents:'55',
 tuitionFees:'9000.60',
 studyMode:'Fulltime').save()
 
-def compN = new Course
+def course2 = new Course
 (
 department:'Computer Networks',
 title:'BSC Computer Networks',
@@ -36,7 +36,7 @@ numberOfStudents:'65',
 tuitionFees:'9000.60',
 studyMode:'Fulltime').save()
 
-def compF = new Course
+def course3 = new Course
 (
 department:'Computer Forensics',
 title:'BSC Computer Forensics',
@@ -71,6 +71,17 @@ password:'liverpoolfc',
 isFundingAvailable: 'Yes',
 course:'Business Studies').save()
 
+def stud3 = new Student
+(
+name:'Robert Francesco',
+studentID:'123456558',
+dob: new Date('23/07/1996'),
+email: 'robertof@hotmail.com',
+username:'robertf',
+password:'robert131',
+isFundingAvailable: 'Yes',
+course:'Religious Studies').save()
+
 def lec1 = new Lecturer
 (
 fullName:'Tonderai M',
@@ -89,20 +100,47 @@ lecturerEmail: 'lynne@shu.ac.uk',
 office:'Cantor 2105',
 bio:'Lynne Dawson is the course leader for BSC Computing').save()
 
+def lec3 = new Lecturer
+(
+fullName:'Lynne C',
+post:'Database Module Leader',
+subject: 'Databases',
+lecturerEmail: 'lynnec@shu.ac.uk',
+office:'Cantor 2002',
+bio:'Databases module leader').save()
+
 def lead1 = new Leader
 (
 fullName:'Oliver Hindley',
-post:'Course Leader',
-email: 'oliverh@shu.ac.uk',
-office:'Owen 2105').save()
+department:'Computing',
+subject:'Programming',
+leaderEmail: 'oliverh@shu.ac.uk',
+username:'OJ',
+password:'Oliver123',
+office:'Owen 2105',
+bio:'Oliver is a programming module leader').save()
 
 def lead2 = new Leader
 (
 fullName:'Peter Collindridge',
-post:'Course Deputy Leader',
-email: 'peterc@shu.ac.uk',
-office:'Adsetts 3105').save()
+department:'Sports',
+subject:'Football',
+leaderEmail: 'peterc@shu.ac.uk',
+username:'peterc',
+password:'password99',
+office:'Adsetts 3105',
+bio:'Peter is a sports module leader').save()
 
+def lead3 = new Leader
+(
+fullName:'Beth K',
+department:'English',
+subject:'English Language',
+leaderEmail: 'bethk@shu.ac.uk',
+username:'bethanyk',
+password:'englishlit',
+office:'Owen 5055',
+bio:'English language course leader').save()
 
     }
     def destroy = {
