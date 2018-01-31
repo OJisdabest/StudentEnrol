@@ -49,6 +49,28 @@ numberOfStudents:'45',
 tuitionFees:'9000.60',
 studyMode:'Fulltime').save()
 
+def stud1 = new Student
+(
+name:'Bob Lee',
+studentID:'123456789',
+dob: new Date('20/03/1995'),
+email: 'boblee@gmail.com',
+username:'bobbylee',
+password:'boblee123',
+isFundingAvailable: 'Yes',
+course:'Electrical Engineering').save()
+
+def stud2 = new Student
+(
+name:'Aidan Whelan',
+studentID:'123456788',
+dob: new Date('10/05/1995'),
+email: 'aidanwhelan@hotmail.com',
+username:'aidanw',
+password:'liverpoolfc',
+isFundingAvailable: 'Yes',
+course:'Business Studies').save()
+
     }
     def destroy = {
     }
