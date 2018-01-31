@@ -71,6 +71,24 @@ password:'liverpoolfc',
 isFundingAvailable: 'Yes',
 course:'Business Studies').save()
 
+def lec1 = new Lecturer
+(
+fullName:'Tonderai M',
+post:'Lecturer',
+subject: 'System Architectures',
+lecturerEmail: 'tonderai@shu.ac.uk',
+office:'Cantor 2103',
+bio:'Tonderai is an expert in System Architectures').save()
+
+def lec2 = new Lecturer
+(
+fullName:'Lynne D',
+post:'Course Leader',
+subject: 'PPSS',
+lecturerEmail: 'lynne@shu.ac.uk',
+office:'Cantor 2105',
+bio:'Lynne Dawson is the course leader for BSC Computing').save()
+
     }
     def destroy = {
     }
